@@ -1,0 +1,138 @@
+.tm-main-nav li:hover {
+   background-color: #f5f5f5;
+}
+
+.submit-btn {
+    display: block;
+    float: right;
+    width: 150px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #87CEFA;
+    border-color: #87CEFA;
+    border-radius: 0px;
+}
+
+.flex-2-col {
+  display: flex;
+  align-items: center;
+}
+   
+.box-bg:hover ,
+.submit-btn:hover {
+  background-color: #87CEFA;   
+}
+
+.box-bg h2:hover,
+.submit-btn:hover {
+  color: #ffffff;   
+  }
+
+p:first-letter {
+  color: #87CEFA;
+  font-size: 30px;
+} 
+
+.tm-content-box:not(:nth-child(3)),
+.tm-main-nav,
+section.blocks,
+section.heading {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.tm-banner {
+    background-color: #f5f5f5;
+ }
+
+.tm-banner-inner {
+   background-color: #ffffff;
+}
+
+
+section:before {
+    content: "";
+    position: absolute;
+	border-top: 30px solid #87CEFA; 
+	border-right: 200px solid transparent;
+}
+
+div[class="carousel-item active"] h2 {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+h2 + p {
+   font-style: italic; 
+}
+
+p:not(.tm-banner-text) {
+   line-height: 30px ;
+   text-indent: 20px;
+}
+
+ul.boxes p:first-letter {
+    color: #000;
+ }
+
+ ul.boxes p {
+    text-indent: 0px; 
+ }
+
+.tm-content-box .padding-medium a {
+    color: black;
+}
+
+.tm-content-box .padding-medium a:visited {
+   text-decoration: underline;
+}
+    
+.tm-content-box .padding-medium ol a:hover {
+   color: #31b0d5;
+   text-decoration: underline double;
+}
+
+.tm-content-box .padding-medium ol a.text:after {
+    display: inline-block; 
+    content: "New";
+    color: red;
+    position: relative;
+    bottom: 7px;
+    font-size: 12px;
+}
+
+li[class="box box-work"] {
+    padding: 10px;
+}
+
+li[class="box box-work"]:nth-child(even) {
+   background-color: #f5f5f5;
+}
+
+.mandatory-field:after {
+   content: "*"; 
+   color: red;
+   display: inline;
+   font-weight: bold;
+}
+
+@media print {
+  
+section:before
+ {
+    display: none; 
+}
+
+ .flex-2-col .padding-medium h2 {
+    color: blue;
+ }
+ 
+ .flex-item img {
+    width: 200px;
+    height: 200px; 
+    margin-right: 200px;
+ }
+
+ .tm-sidebar, #about, .heading, .blocks, #ideas, .img-contact-us, #contact {
+    display: none;
+}
+}
