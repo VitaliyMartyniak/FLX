@@ -1,0 +1,18 @@
+$bodyColor: #e6e6e6;
+$menuColor:  rgb(2, 2, 204);
+$headerColor: #f0552e;
+$borderColor: rgb(202, 199, 199);
+$textColor: rgb(143, 143, 143);
+$blocksColor: white;
+$captionColor: rgb(160, 158, 158);
+$h3color: rgb(86, 106, 134);
+$asteriskColor : rgb(143, 143, 143);
+
+$fontStack: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+$headerPhoto: url(../img/header_background_v2.jpg);
+
+@mixin content {
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration-line: none;
+}
